@@ -1,0 +1,75 @@
+@font-face {
+    font-family: font1;
+    src: url(assets/font1.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    user-select: none;
+}
+body {
+    background-image: url(assets/bg-index.gif);
+    background-size: cover;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.container h1 {
+    text-align: center;
+    font-size: 100px;
+    font-family: font1;
+    color: #ccc;
+}
+.container .btn {
+    margin-top: 100px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-color: #121010bd;
+    border-bottom: #ccc solid 4px;
+    border-radius: 5px;
+    font-size: 40px;
+    color: #ccc;
+    margin: 0 20px;
+    padding: 0 8px;
+    cursor: pointer;
+    font-family: font1;
+    transition: 0.4s;
+}
+button:hover {
+    color: #ff0000;
+    border-bottom: #ff0000 solid 4px;
+    font-size: 45px;
+    box-shadow: #101010 15px 15px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    color: #ff0000;
+}
+@media (max-width: 780px) {
+    .container {
+        margin-top: 80px;
+    }
+    .container h1 {
+        width: 100vw;
+        font-size: 80px;
+    }
+    .btn {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    button {
+        margin: 10px 0;
+    }
+}
